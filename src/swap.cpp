@@ -13,5 +13,12 @@ NOTES:
 
 void swap(int *a, int *b)
 {
-	
+	if (*a == *b)
+		return;
+	else
+	{
+		*a = *a + *b;
+		*b = *a - *b;
+		*a = *a - *b;
+	}
 }
